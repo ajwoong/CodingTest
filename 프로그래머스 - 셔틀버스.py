@@ -30,7 +30,7 @@ def solution(n, t, m, timetable):
         cnt = m
     
     
-    answer_time =  str(answer//60).zfill(2) + ":" + str(int(answer%60)).zfill(2)
+    answer_time =  str(answer//60).zfill(2) + ":" + str((answer%60)).zfill(2)
     return(answer_time)
 
         
