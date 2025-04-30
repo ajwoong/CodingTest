@@ -7,7 +7,7 @@ now_max = sum(nlist[:k])
 current_max = now_max
 q = deque(nlist[:k])
 
-for i in range(n):
+for i in range(k,n):
     p = q.popleft()
     q.append(nlist[i])
     now_max = now_max - p+nlist[i]
