@@ -36,5 +36,5 @@ for element in new_board:
         if(0<=nx<m and 0<=ny<n):
             if(board[nx][ny] < board[x][y]):
                 dp[nx][ny] += dp[x][y]
-
+print(dp)
 print(dp[m-1][n-1])
