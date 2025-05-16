@@ -21,5 +21,8 @@ for k in range(1,n+1):
 
 for i in range(1,n+1):
     for j in range(1, n+1):
-        print(board[i][j], end= " ")
+        if(board[i][j] == math.inf):
+            print(0, end= " ")
+        else:
+            print(board[i][j], end= " ")
     print("")
