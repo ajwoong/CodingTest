@@ -1,3 +1,5 @@
+# visited 계산이 많이걸릴거 같다면 set으로 하는것을 잊지말자
+
 a, p = map(int,input().split())
 
 visited = set()
