@@ -1,3 +1,7 @@
+# aaabbbbcdddefffg
+# 이런식으로 주어졌을때 중복이 있는 것들은 a* 이런식으로 바꾸는 문제
+# a*b*cd*ef*g 답은 이렇게 될것임
+
 def solution(line):
     answer = ""
     check = 0
