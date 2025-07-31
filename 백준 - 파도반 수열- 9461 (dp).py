@@ -8,3 +8,7 @@ for i in range(test):
         dp[j] = dp[j-2] + dp [j-3]
 
     print(dp[n-1])
+
+    
+
+    
