@@ -25,20 +25,14 @@ ans = []
 while idx < len(tlist):
     if(oktlist[idx] - tlist[idx] > 0):
         if(pls_time):
-            k = max(max_time, oktlist[idx] - tlist[idx])
-            if(k > max_time):
-                max_time = k
-                ans.append(max_time)
+            max_time = max(max_time, oktlist[idx] - tlist[idx])
         else:
             pls_time = True
             ans.append(max_time)
             max_time = oktlist[idx] - tlist[idx]
     elif(tlist[idx] - oktlist[idx] > 0):
         if(not pls_time):
-            k = max(max_time, tlist[idx] - oktlist[idx])
-            if(k > max_time):
-                max_time = k
-                ans.append(max_time)
+            max_time = max(max_time, tlist[idx] - oktlist[idx])
         else:
             pls_time = False
             ans.append(max_time)
